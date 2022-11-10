@@ -11,18 +11,16 @@ function Main() {
 
   return (
     <main id="main">
-      {posts.map(({ ...posts }) => {
-        console.log(posts.title + "Post data");
-        return (
-          <Post
-            key={posts.postId}
-            title={posts.title}
-            date={posts.date}
-            author={posts.author}
-            text={posts.text}
-          />
-        );
-      })}
+    {/* using the keys of the object as a param by destructuring to have neater code */}
+      {posts.map(({postId,title,date,author,text}) => (
+        <Post
+          key={postId}
+          title={title}
+          date={date}
+          author={author}
+          text={text}
+        />
+      ))}
     </main>
   );
 }
