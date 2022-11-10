@@ -2,8 +2,8 @@ import React from 'react';
 
 import './index.css';
 
-function Post(text) {
-  return <article>chief</article>;
+function Post({title}) {
+  return <article>{title}</article>;
 }
 
 export default Post;
