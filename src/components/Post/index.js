@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import './index.css';
+import "./index.css";
 
-function Post({title}) {
-  return <article>{title}</article>;
+function Post({ title, date, author, text, hightlights, image }) {
+  return (
+    <article>
+      title={title}
+      date={date}
+      author={author}
+      text={text}
+    </article>
+  );
 }
 
 export default Post;
