@@ -33,5 +33,5 @@ export default Main;
 // for each visit of the array indexes ensure componant is rendered.
 // THINGS LEFT.☑️
 // Make the image work.☑️
-//Make the highlights work with a map.
+//Make the highlights work with a map.☑️
 //
