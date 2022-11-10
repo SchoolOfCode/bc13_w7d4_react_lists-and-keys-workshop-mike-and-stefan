@@ -9,7 +9,19 @@ import Post from '../Post';
 function Main() {
   const [posts, setPosts] = useState(samplePosts);
 
-  return <main id="main"></main>;
+  return <main id="main">
+   {posts.map(({posts,id})=>{
+    return <Post/>
+   })}
+
+    
+  </main>;
+  
 }
 
 export default Main;
+
+
+// goal is to loop over postState with a .map
+// for each visit of the array indexes ensure componant is rendered.
+// 
